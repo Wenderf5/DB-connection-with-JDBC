@@ -17,18 +17,25 @@ public class Main {
         DataBase dataBase = new DataBase();
         Connection connection = dataBase.createConnection(url, user, password);
 
+//        String result = dataBase.addUser(connection, "USER-NAME");
+//        System.out.println(result);
+
 //        ArrayList<Person> listPerson = dataBase.getUsers(connection);
 //        for (Person person : listPerson) {
 //            System.out.println(person.toString());
 //        }
 
-//        Optional<Person> person = dataBase.getUser(connection, "c042742b-183d-4f7b-b88f-609ea311bc5d");
+//        Optional<Person> person = dataBase.getUser(connection, "USER-ID");
 //        if (person.isPresent()) {
 //            System.out.println(person.get().toString());
 //        } else {
 //            System.out.println("Usuário não encontrado!");
 //        }
 
+//        String result = dataBase.deleteUser(connection, "USER-ID");
+//        System.out.println(result);
 
+//        String result = dataBase.updateUserName(connection, "USER-ID", "NEW-USER-NAME");
+//        System.out.println(result);
     }
 }
